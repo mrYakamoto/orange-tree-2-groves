@@ -2,15 +2,14 @@
  
 ##Learning Competencies 
 
+* Working with inheritance in OO programing
+
 ##Summary 
 
  We've built a simple model of a single fruit and a single fruit tree with our `Orange` and `OrangeTree` classes.  Let's expand it to a whole grove with multiple kinds of trees.
 
 By the end we'll have classes like `FruitGrove`, `AppleTree`, and `PearTree`.
 
-## Learning Objectives
-
-* Working with inheritance in OO programing
 
 ##Releases
 
