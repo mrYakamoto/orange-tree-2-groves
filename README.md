@@ -1,15 +1,15 @@
-# Orange Tree 2 Groves 
- 
-##Learning Competencies 
+# Orange Tree 2 Groves
+
+##Learning Competencies
 
 * Working with inheritance in OO programing
 
-##Summary 
+##Summary
 
  We've built a simple model of a single fruit and a single fruit tree with our `Orange` and `OrangeTree` classes.  Let's expand it to a whole grove with multiple kinds of trees.
 
 By the end we'll have classes like `FruitGrove`, `AppleTree`, and `PearTree`.
-
+You should bring your code _and_ tests over from the Orange Tree 1 challenge.
 
 ##Releases
 
@@ -20,6 +20,8 @@ Let's start by defining `AppleTree` and `Apple` classes.  They should behave the
 That is, they should support all the same methods, but the particularities might differ: apples have a smaller diameter but apple trees bear fruit sooner and bear more fruit when they do.
 
 Creating the `Apple` and `AppleTree` class at this stage shouldn't involve much more than copying your `Orange` and `OrangeTree` classes and changing a few variables or constants.  If it's more complicated than that ask for help!
+
+You'll need to add tests for `AppleTree` and `Apple`. Those tests are going to look a whole lot like `OrangeTree` and `Orange`. Don't worry if your specs aren't DRY for now.
 
 ###Release 1 : The `FruitTree` and `Fruit` Classes
 
@@ -41,9 +43,13 @@ Think carefully about the parameters that make an orange tree different from an 
 
 There could be others, but this gives you an idea of some of the "parameters" that differentiate one fruit tree's behavior from another.
 
+Most importantly, your tests should still run. You might need to make small fixes if you change your method names on your classes, but you shouldn't need to change the logic of your tests. That's the beauty of tests, they're a safety net when we engage in large refactors like this one. If they continue to go green, you know you're in good shape. If not, you get to catch your mistakes early.
+
 #### The `PearTree` and `Pear` Classes
 
 Now that you have `FruitTree` and `Fruit` classes, create a `PearTree` class that yields `Pears`, just like `OrangeTree` and `AppleTree`.
+
+Yup, you'll want to write tests for that too. It's going to be feel like you're copying and pasting with minor edits. Don't worry about it. Our RSpec-fu will improve over time.
 
 ###Release 2 : Create a `TreeGrove` Class
 
@@ -54,8 +60,5 @@ Let's plant some trees!  Create a `TreeGrove` class that works as follows.
 3. There is a `TreeGrove#trees` method which returns all trees
 4. There is a `TreeGrove#mature_trees` method which returns all trees that can currently bear fruit
 5. There is a `TreeGrove#dead_trees` method which returns all dead trees
- 
 
-<!-- ##Optimize Your Learning  -->
-
-##Resources
+Write tests for `TreeGrove` to assert that it's working as your expect.
